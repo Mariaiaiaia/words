@@ -1,0 +1,18 @@
+.img_container{
+    position: absolute;
+    left: -160px;
+    bottom: -50px;
+    z-index: 0;
+
+    @media (max-width: 992px) {
+        left: -60px;
+        
+    }
+}
+
+.img_start{
+    position: absolute;
+    right: 20px;
+    bottom: -50px;
+}
+

@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import {Route, Switch} from 'react-router-dom';
+import ToAddPage from './pages/ToAdd';
+import ToExamPage from './pages/ToExam';
+import ToLearnPage from './pages/ToLearn';
+import StartPage from './pages/Start';
+import Navigation from "./components/Navigation";
+import Exam from './pages/Exam';
+import Style from './styles/app.module.scss';
+import Hamburger from './components/Hamburger';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={Style.app}>
+      <Hamburger />
+      <Navigation />
+      <Switch>
+       <Route path='/' exact>
+          <StartPage />
+        </Route>
+        <Route path='/learn'>
+          <ToLearnPage />
+        </Route>
+        <Route path='/exam'>
+          <ToExamPage />
+        </Route>
+        <Route path='/add-new-card'>
+          <ToAddPage />
+        </Route>
+        <Route path='/the-exam'>
+          <Exam />
+        </Route>
+      </Switch>
     </div>
+
   );
 }
 

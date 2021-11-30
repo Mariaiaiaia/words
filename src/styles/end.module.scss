@@ -1,0 +1,99 @@
+.container{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;  
+    }
+
+    .result_circle{
+        height: 140px;
+        width: 140px;
+        background-color: rgba(205, 183, 159, 0.589);
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .result_wave{
+            height: 180px;
+            width: 180px;
+            border-radius: 40%;
+            background-color: rgb(156, 176, 185);
+            animation-name: wave;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            position: absolute;
+            left: -20px;
+        }
+
+        @keyframes wave {
+            from {transform: rotate(0deg);}
+            to {transform: rotate(180deg);}
+        }
+
+        .result_percent{
+            color: rgba(238, 250, 255, 0.76);
+            font-size: 3.5rem;
+            z-index: 2;  
+        }
+    }
+    
+
+
+
+    .finish_msg{
+        font-size: 2rem;
+        text-align: center;
+        margin: 2.5rem;
+        color: rgba(156, 176, 185, 1);
+
+        @media (max-width: 576px) {
+            margin: 0;
+        }
+    }
+
+    .container_btns{
+
+        @media (max-width: 768px) {
+            display: flex;
+            justify-content: center;  
+        }
+
+        @media (max-width: 576px) {
+            flex-direction: column; 
+        }
+
+        .finish_btn{     
+            height: 50px;
+            width: 180px;
+            margin: 1.5rem;
+            background-color: rgba(156, 176, 185, 1);
+            border: none;
+            border-radius: 30px;
+            color: white;
+            font-size: 1.4rem;
+            &:focus{
+                outline-width: 0;
+            }
+
+            .link_btn{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                color: white;
+            }            
+        }
+    }
+}

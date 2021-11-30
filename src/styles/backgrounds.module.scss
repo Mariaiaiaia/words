@@ -1,0 +1,29 @@
+.back_card_add_page{
+    background-image: url('../images/cardback.svg');
+    background-size:contain;
+    background-repeat: no-repeat;
+
+    @media (max-width: 576px) {
+        background-image: none;
+    }
+}
+
+.back_card_exam_page{
+    background-image: url('../images/cardback1.svg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    
+    @media (max-width: 992px) {
+        background-image: none;
+    }
+}
+
+.back_card_exam{
+    background-image: url('../images/cardback2.svg');
+    background-size:contain;
+    background-repeat: no-repeat;
+
+    @media (max-width: 576px) {
+        background-image: none;
+    }
+}

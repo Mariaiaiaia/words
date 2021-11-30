@@ -1,0 +1,199 @@
+.navigator{
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+   
+    @media (max-width: 992px) {
+        width: 80%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        background-color: rgba(158, 172, 170, 0.774); 
+        border-radius: 0 35px 35px 0;
+       
+    }
+
+} 
+
+.hamburger_close{
+    display: none;
+
+    @media (min-width: 993px) {
+        width: 20%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.ham_container{
+
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
+
+
+
+    
+.logo{
+    height: 4rem;
+
+    text-align: center;
+    font-size: 2.7rem;
+    color: rgba(156, 176, 185, 1);
+    margin: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    
+    h6{
+        display: flex;
+        flex-direction: row;
+        height: 60px;
+        width: 160px;
+
+        .img{
+            padding: 0;
+            margin: 0;
+        }
+    }
+    
+}
+
+    
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 95%;
+    li{
+        width: 100%;
+        align-self:flex-start;
+        flex-direction: row;
+        margin: 0.3rem 0;
+        .li_container{
+            height: 4rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.712);
+            border-radius: 20px;
+            padding: 0.5rem 1rem;
+            position: relative;
+            overflow: hidden;
+            a{
+                position: absolute;
+                text-decoration: none;
+                color: rgba(156, 176, 185, 1);
+                padding-left: 1rem;
+                height: 100%;
+                width: 100%;
+                top: 0px;
+                left: 0px;
+                display: flex;
+                align-items: center;
+                z-index: 3;
+                h6{
+                    font-weight: 400;
+                    font-size: 1.4rem;
+                    padding-left: 3rem;
+                }
+                  
+            }
+            .active{
+                background-color: rgba(95, 158, 160, 0.144);
+            }
+
+            &:hover{
+                animation-name: anim;
+                animation-duration: 0.8s;
+                animation-fill-mode: forwards;
+
+                @keyframes anim {
+                    from {background-color: rgba(255, 255, 255, 0.137);} 
+                    to {background-color: rgba(170, 191, 192, 0.342);}
+                }  
+            }
+
+            .icon{
+                position: relative;
+                height: 40px;
+                width: 40px;
+                .circle_add{
+                    height: 27px;
+                    width: 27px;
+                    background-color: rgba(156, 176, 185, 1);
+                    border-radius: 50%;
+                    padding-left: 3px;
+                }
+                .circle_learn{
+                    height: 27px;
+                    width: 27px;
+                    background-color: rgba(155, 184, 179, 1);
+                    border-radius: 50%;
+                    margin-right: 5px;
+                    margin-top: 10px;
+                }
+                .circle_exam{
+                    height: 25px;
+                    width: 25px;
+                    background-color: rgba(205, 183, 159, 1);
+                    border-radius: 50%;
+                    margin-left: 15px;
+                }
+                img{
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                }
+            }
+        }
+       
+       
+    }
+}
+
+
+.hamburger{
+    display: none;
+    @media (max-width: 993px) {
+        display: block;
+        
+    }
+
+    @media (max-width: 572px) {
+        display: block;
+        font-size: 3rem;
+
+    }
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 50px;
+    width: 50px;
+    z-index: 6;
+    font-size: 4rem;
+    background: none;
+    border: none;
+    color: rgba(60, 78, 82, 0.623);
+    transition-duration: 1s;
+    
+    &:focus{
+        outline-width: 0;
+    }
+
+
+}
+
+.open{
+    color: rgb(243, 243, 243);
+    transform: rotate(-90deg);
+    transition-duration: 1s;
+}

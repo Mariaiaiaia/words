@@ -1,0 +1,69 @@
+.border_add_card_page{
+    border: 5px dotted rgb(63, 75, 73);
+    border-radius: 35px;
+    margin-bottom: 6vh;
+}
+
+.card_border_add_card{
+    border: 3px solid rgba(156, 176, 185, 0.568);
+    transform: translate(30px, 20px) rotate(10deg);
+
+    .card{
+        transform: translate(-30px, -20px) rotate(-10deg);
+    }
+}
+
+
+
+.border_exam_page{
+    border: 5px double rgb(63, 75, 73);
+    margin-bottom: 6vh;
+}
+
+.card_border_exam_page{
+    border: 3px solid rgba(233, 225, 214, 0.568);
+    transform: translate(-30px, 0px) rotate(-15deg);
+
+    .exam_in{
+        transform: translate(30px, 0px) rotate(15deg);
+    }
+}
+
+
+.border_exam_card{
+    border: 5px dashed rgba(155, 184, 179, 1);
+    margin-bottom: 6vh;
+  
+}
+
+.card_border_exam_card{
+    border: 3px dotted rgba(59, 71, 70, 0.548);
+    transform: translate(-30px, 0px) rotate(10deg);
+
+    .card_exam_in{
+        transform: translate(30px, 0px) rotate(-10deg);
+    }
+}
+
+
+.border_end_page{
+    border: 5px dotted rgba(155, 184, 179, 1);
+    margin-bottom: 6vh;
+  
+}
+
+.card_border_end{
+    border: 3px solid rgba(66, 73, 73, 0.548);
+    transform: translate(-30px, 0px);
+
+    .end_in{
+        transform: translate(30px, 0px);
+    }
+}
+
+
+.border_start_page{
+    border: 5px dotted rgba(155, 184, 179, 1);
+    margin-bottom: 6vh;
+  
+}

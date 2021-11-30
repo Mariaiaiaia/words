@@ -1,0 +1,21 @@
+.welcome_text{
+    width: 700px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.4rem;
+    z-index: 2;
+    position: relative;
+    background-color: rgba(241, 245, 244, 0.712);
+    color: rgb(105, 118, 124);
+    padding: 30px;
+    letter-spacing: 2px;
+    line-height: 50px;
+
+    @media (max-width: 768px) {
+        width: 72vw; 
+        height:min-content;       
+    }
+}
