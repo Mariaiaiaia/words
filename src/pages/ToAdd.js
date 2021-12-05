@@ -17,7 +17,7 @@ function ToAddPage(){
             transition={{ type: "spring", stiffness: 700}}
             className={Page.title}
             >
-                Add new card
+                Add a new word
             </motion.div>
            
             <div className={Border.border_add_card_page}>

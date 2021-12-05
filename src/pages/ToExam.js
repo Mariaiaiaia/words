@@ -3,7 +3,6 @@ import SelectWords from '../components/SelectWords';
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
 import { clearQuizCard, addArrayToCards } from '../store/QuizCardsSlice';
-import { updateSelectedState } from '../store/CardsSlice';
 import Page from '../styles/page.module.scss';
 import toExam from '../styles/toexam.module.scss';
 import Card from '../styles/card.module.scss';
@@ -40,15 +39,10 @@ function ToExamPage(){
         }
     }
 
-
-    useEffect(() => {
-       
+    useEffect(() => {   
         dispatch(clearQuizCard());
-        dispatch(updateSelectedState());
-
     }, [dispatch])
 
-    
     function addAllWords() {
         setShowWords(false);
         dispatch(clearQuizCard());
@@ -66,13 +60,15 @@ function ToExamPage(){
 
     if(cardsCollection.length === 0){
         return(
-            <motion.div 
-                    animate={{ y: 10 }} 
-                    transition={{ type: "spring", stiffness: 700}}
-                    className={Page.title}
-                >
-                no words yet
-            </motion.div>
+            <div className={Page.page}>
+                <motion.div 
+                        animate={{ y: 10 }} 
+                        transition={{ type: "spring", stiffness: 700}}
+                        className={toExam.no_cards_msg}
+                    >
+                    before starting the test, you need to add words to your dictionary
+                </motion.div>
+            </div>
         )
     }else{
         return( 

@@ -11,10 +11,14 @@ function StartPage(){
             <div className={Page.title}> Welcome to My Cards! </div>
             <div className={Border.border_start_page}>          
                 <div className={startPage.welcome_text}>
-                    My Cards is a simple education application which can be used to learn new words
-                    on a different languages.
-                    <br/>You can create your own collection of words, learn them by clicking on the cards to see the translation,
-                    and test your knowledge on the exam!
+                    MyCards is a simple educative application which the intern of teaching new words
+                    in different languages. You can create your own vocabulary using digital flash cards. 
+                    <br /><div className={startPage.ul_title}>how mycards is used:</div>
+                    <ul>
+                        <li>enter the word and its translation</li>
+                        <li>Once the word appears, click on it to see its translation</li>
+                    </ul>  
+                    It is a gread way to test your knowledge on the exam!
                 </div> 
             </div>
             <div className={pageImg.img_start}>

@@ -17,7 +17,7 @@ function Addcards() {
     function addNewCard() {
         if(word === "" || translate === ""){
             return(
-                setError("not valid")
+                setError("you need to enter a word in the target language and translation in the native language")
             )
         }else{
             dispatch(addCard({word, translate}));
@@ -62,17 +62,17 @@ function Addcards() {
                         variants={item}
                         type="text"
                         className={addPage.input_new_card}
-                        placeholder="word"
+                        placeholder="learning language"
                         value={word}
-                        onChange={(e) => setWord(e.target.value)}
+                        onChange={(e) => setWord(e.target.value.toLowerCase())}
                     />
                     <motion.input
                         variants={item}
                         type="text"
                         className={addPage.input_new_card}
-                        placeholder="translation"
+                        placeholder="native language"
                         value={translate}
-                        onChange={(e) => setTranslate(e.target.value)}
+                        onChange={(e) => setTranslate(e.target.value.toLowerCase())}
                     />
                 </div>
                 <motion.button variants={item} className={addPage.add_button} onClick={addNewCard}>

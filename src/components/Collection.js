@@ -43,8 +43,8 @@ function Collection() {
         )
     }else {
         return(
-            <div>
-                No words       
+            <div className={CardsStyle.no_cards_msg}>
+                there are no cards in your dictionary yet       
             </div>
         )
     }

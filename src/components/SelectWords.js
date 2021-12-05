@@ -3,11 +3,16 @@ import { addQuizCard, deleteQuizCard } from '../store/QuizCardsSlice';
 import { selectCard } from '../store/CardsSlice';
 import Select from '../styles/select.module.scss';
 import  CardsStyle  from '../styles/collection.module.scss';
+import { useEffect } from 'react';
+import { updateSelectedState } from '../store/CardsSlice';
+
 
 
 function SelectWords() {
     const cardsCollection = useSelector(state => state.cards.cards);
     const dispatch = useDispatch();
+
+    useEffect(() => { return () => { dispatch(updateSelectedState()); } }, [dispatch])
 
     function addToSelected(word, translate, id){  
         dispatch(addQuizCard({word, translate, id}));

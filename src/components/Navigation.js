@@ -13,7 +13,8 @@ function Navigation(props) {
         <motion.header animate={{opacity: 1, transition:{ duration: 0.7}}} initial={{opacity: 0}} className={`${props.open ? Nav.navigator : Nav.hamburger_close}`}>
             
             <Link to='/'className={Nav.logo}>
-                <h6>My C<img src={logo} alt="logo"/>rds</h6>
+                <img src={logo} alt="logo"/>
+                <div className={Nav.logo_text}>MyCards</div>
             </Link>
             <ul>
                 <li onClick={props.open ? () => {props.setOpen(!props.open)} : null}>
@@ -41,7 +42,7 @@ function Navigation(props) {
                             <div className={Nav.circle_learn}></div>
                             <img src={iconLanguage} alt="learn" />
                         </div>
-                        <NavLink to='/learn' exact activeClassName={Nav.active}><h6>Learn words</h6></NavLink>
+                        <NavLink to='/learn' exact activeClassName={Nav.active}><h6>vocabulary</h6></NavLink>
                     </div>
                 </li>
             </ul>
