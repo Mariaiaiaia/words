@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/words/static/css/main.f09284fa.chunk.css",
-    "main.js": "/words/static/js/main.52a58967.chunk.js",
-    "main.js.map": "/words/static/js/main.52a58967.chunk.js.map",
+    "main.css": "/words/static/css/main.d97e298f.chunk.css",
+    "main.js": "/words/static/js/main.f50d5b7f.chunk.js",
+    "main.js.map": "/words/static/js/main.f50d5b7f.chunk.js.map",
     "runtime-main.js": "/words/static/js/runtime-main.f0b6cdea.js",
     "runtime-main.js.map": "/words/static/js/runtime-main.f0b6cdea.js.map",
-    "static/js/2.a7ec7688.chunk.js": "/words/static/js/2.a7ec7688.chunk.js",
-    "static/js/2.a7ec7688.chunk.js.map": "/words/static/js/2.a7ec7688.chunk.js.map",
+    "static/js/2.08cc77d0.chunk.js": "/words/static/js/2.08cc77d0.chunk.js",
+    "static/js/2.08cc77d0.chunk.js.map": "/words/static/js/2.08cc77d0.chunk.js.map",
     "index.html": "/words/index.html",
-    "static/css/main.f09284fa.chunk.css.map": "/words/static/css/main.f09284fa.chunk.css.map",
-    "static/js/2.a7ec7688.chunk.js.LICENSE.txt": "/words/static/js/2.a7ec7688.chunk.js.LICENSE.txt",
+    "static/css/main.d97e298f.chunk.css.map": "/words/static/css/main.d97e298f.chunk.css.map",
+    "static/js/2.08cc77d0.chunk.js.LICENSE.txt": "/words/static/js/2.08cc77d0.chunk.js.LICENSE.txt",
     "static/media/Language.79f4d7f9.svg": "/words/static/media/Language.79f4d7f9.svg",
     "static/media/Notes.2fdf96c0.svg": "/words/static/media/Notes.2fdf96c0.svg",
     "static/media/Test.67894b19.svg": "/words/static/media/Test.67894b19.svg",
@@ -18,15 +18,15 @@
     "static/media/select.module.scss": "/words/static/media/checkcl.d50bb457.svg",
     "static/media/examPage.1f1e237d.svg": "/words/static/media/examPage.1f1e237d.svg",
     "static/media/learnPage.25b34ce2.svg": "/words/static/media/learnPage.25b34ce2.svg",
-    "static/media/logo.11451328.svg": "/words/static/media/logo.11451328.svg",
+    "static/media/logo.6c7d40de.svg": "/words/static/media/logo.6c7d40de.svg",
     "static/media/startPage.095e91bd.svg": "/words/static/media/startPage.095e91bd.svg",
     "static/media/thumbsDown.568169ee.svg": "/words/static/media/thumbsDown.568169ee.svg",
     "static/media/thumbsUp.17fd40d7.svg": "/words/static/media/thumbsUp.17fd40d7.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.f0b6cdea.js",
-    "static/js/2.a7ec7688.chunk.js",
-    "static/css/main.f09284fa.chunk.css",
-    "static/js/main.52a58967.chunk.js"
+    "static/js/2.08cc77d0.chunk.js",
+    "static/css/main.d97e298f.chunk.css",
+    "static/js/main.f50d5b7f.chunk.js"
   ]
 }
